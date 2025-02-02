@@ -34,6 +34,12 @@
                 </address>
             </aside>
         </div>
+        <search>
+            <form action="/search-results.html" method="GET">
+                <input type="text" name="query" placeholder="Search..." required>
+                <button type="submit">🔍 Search</button>
+            </form>
+        </search>
     </header>
     <main>
         <template id="feedback-template">
@@ -42,6 +48,7 @@
                 <colgroup>
                     <col span="2" style="background-color:red">
                     <col style="background-color:yellow">
+                    <col style="background-color:blue">
                   </colgroup>
                 <thead>
                     <tr>
@@ -72,7 +79,6 @@
             width="560" 
             height="315" 
             src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-            frameborder="0" 
             allowfullscreen>
         </iframe>
         <br>
@@ -111,7 +117,7 @@
         </ol>
         <br>
         <select>
-            <optgroup>
+            <optgroup label="Category 1">
                 <option>Option 1</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
@@ -123,12 +129,7 @@
             <button>Close</button>
         </dialog>      
         <br>
-        <search>
-            <form action="/search-results.html" method="GET">
-                <input type="text" name="query" placeholder="Search..." required>
-                <button type="submit">🔍 Search</button>
-            </form>
-        </search>
+
         <br>
         <p>Cryptids of Cornwall:</p>
         <dl>
@@ -144,12 +145,12 @@
             <p>JavaScript is disabled in your browser. Some features may not work properly.</p>
         </noscript>
         <picture>
-            <img src="https://t4.ftcdn.net/jpg/09/17/12/23/360_F_917122367_kSpdpRJ5Hcmn0s4WMdJbSZpl7NRzwupU.jpg">
+            <img src="https://t4.ftcdn.net/jpg/09/17/12/23/360_F_917122367_kSpdpRJ5Hcmn0s4WMdJbSZpl7NRzwupU.jpg" alt="This is me!">
         </picture>
     </main>
     
     <footer>
-        <p>&copy2025 Timothy Lam</p>
+        <p>&copy; 2025 Timothy Lam</p>
     </footer>
 </body>
 
