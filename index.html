@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="src/styles/style.css">
-    <script src="src\scripts\hello-world.js"></script>
+    <script src="src/scripts/hello-world.js"></script>
 </head>
 
 <body>
@@ -30,22 +30,21 @@
                     <address>
                         <ul>
                             <li><a href="https://github.com/TimothyLam727" target="_blank">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/wai-taing-lam-417a43227/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.linkedin.com/in/wai-taing-lam-417a43227/"
+                                    target="_blank">LinkedIn</a></li>
                             <li><a href="https://www.instagram.com/tim_tim_0727" target="_blank">Instagram</a></li>
                             <li><a href="mailto:timlam727@gmail.com">Email</a></li>
                         </ul>
                     </address>
-                    
+
                 </aside>
             </social-links>
         </div>
     </header>
     <main>
         <div class="home-content">
-            <!--Can remove picture tag-->
-            <pircutre>
-                <img src="https://t4.ftcdn.net/jpg/09/17/12/23/360_F_917122367_kSpdpRJ5Hcmn0s4WMdJbSZpl7NRzwupU.jpg">
-            </pircutre>
+            <img src="https://t4.ftcdn.net/jpg/09/17/12/23/360_F_917122367_kSpdpRJ5Hcmn0s4WMdJbSZpl7NRzwupU.jpg"
+                alt="This is me!">
             <section>
                 <h1>Hello, I am Timothy Lam.</h1>
                 <h2>Student @ UC San Diego</h2>
@@ -63,13 +62,13 @@
             <form action="src/assets/form.html" method="POST">
                 <fieldset>
                     <legend>User Info.</legend>
-                    <label for="name">First Name:</label>
-                    <input type="text" id="first-name" name="name" required>
-                    <label for="name">Last Name:</label>
-                    <input type="text" id="last-name" name="name" required>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
                     <br>
                     <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required>
                 </fieldset>
                 <br>
                 <label for="rating">Rating (1-5):</label>
@@ -86,12 +85,13 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Submit</button>
+            </form>
         </section>
-    <main>
-    <br>
-    <footer>
-        <p>&copy2025 Timothy Lam</p>
-    </footer>
+        <main>
+            <br>
+            <footer>
+                <p>&copy2025 Timothy Lam</p>
+            </footer>
 </body>
 
 </html>
