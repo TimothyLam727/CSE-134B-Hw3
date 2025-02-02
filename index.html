@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <script src="src\scripts\hello-world.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">T</a>
+            </div>
+            <custom-nav>
+                <ul>
+                    <li><a href="src/reference/about.html">About Me</a></li>
+                    <li><a href="src/reference/experience.html">Experience</a></li>
+                    <li><a href="src/reference/projects.html">Projects</a></li>
+                    <li><a href="src/reference/lab.html">Lab</a></li>
+                </ul>
+            </custom-nav>
+            <social-links>
+                <!--The <aside> can be removed-->
+                <aside>
+                    <p>Connect with me:</p>
+                    <address>
+                        <ul>
+                            <li><a href="https://github.com/TimothyLam727" target="_blank">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/wai-taing-lam-417a43227/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/tim_tim_0727" target="_blank">Instagram</a></li>
+                            <li><a href="mailto:timlam727@gmail.com">Email</a></li>
+                        </ul>
+                    </address>
+                    
+                </aside>
+            </social-links>
+        </div>
+    </header>
+    <main>
+        <div class="home-content">
+            <!--Can remove picture tag-->
+            <pircutre>
+                <img src="https://t4.ftcdn.net/jpg/09/17/12/23/360_F_917122367_kSpdpRJ5Hcmn0s4WMdJbSZpl7NRzwupU.jpg">
+            </pircutre>
+            <section>
+                <h1>Hello, I am Timothy Lam.</h1>
+                <h2>Student @ UC San Diego</h2>
+            </section>
+            <br>
+        </div>
+        <blockquote>
+            <p>
+                "Be the Best of yourself, today and the days after when facing any problem."
+            </p>
+            <p>—A friend of mine :), <cite>No citation haha</cite></p>
+        </blockquote>
+        <section>
+            <h2>Feedback Form</h2>
+            <form action="src/assets/form.html" method="POST">
+                <fieldset>
+                    <legend>User Info.</legend>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="first-name" name="name" required>
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="last-name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                </fieldset>
+                <br>
+                <label for="rating">Rating (1-5):</label>
+                <input list="ratings" id="rating" name="rating" placeholder="Select or Type a Rating" required>
+                <datalist id="ratings">
+                    <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                    <option value="4">⭐⭐⭐⭐ - Good</option>
+                    <option value="3">⭐⭐⭐ - Average</option>
+                    <option value="2">⭐⭐ - Poor</option>
+                    <option value="1">⭐ - Very Bad</option>
+                </datalist>
+                <br>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+        </section>
+    <main>
+    <br>
+    <footer>
+        <p>&copy2025 Timothy Lam</p>
+    </footer>
+</body>
+
+</html>
