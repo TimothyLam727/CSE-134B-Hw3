@@ -17,10 +17,9 @@
             </div>
             <custom-nav>
                 <ul>
-                    <li><a href="src/reference/about.html">About Me</a></li>
-                    <li><a href="src/reference/experience.html">Experience</a></li>
-                    <li><a href="src/reference/projects.html">Projects</a></li>
-                    <li><a href="src/reference/lab.html">Lab</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </custom-nav>
             <social-links>
@@ -42,54 +41,150 @@
         </div>
     </header>
     <main>
-        <div class="home-content">
-            <img src="https://t4.ftcdn.net/jpg/09/17/12/23/360_F_917122367_kSpdpRJ5Hcmn0s4WMdJbSZpl7NRzwupU.jpg"
-                alt="This is me!">
-            <section>
-                <h1>Hello, I am Timothy Lam.</h1>
-                <h2>Student @ UC San Diego</h2>
-            </section>
-            <br>
-        </div>
-        <blockquote>
-            <p>
+        <home-section id="home">
+            <div class="home-main-content">
+                <img src="https://t4.ftcdn.net/jpg/09/17/12/23/360_F_917122367_kSpdpRJ5Hcmn0s4WMdJbSZpl7NRzwupU.jpg"
+                    alt="This is me!">
+                <hgroup>
+                    <h1>Hello, I am Timothy Lam.</h1>
+                    <h2>Student @ UC San Diego</h2>
+                </hgroup>
+            </div>
+            <blockquote>
                 "Be the Best of yourself, today and the days after when facing any problem."
-            </p>
-            <p>—A friend of mine :), <cite>No citation haha</cite></p>
-        </blockquote>
+            </blockquote>
+        </home-section>
+
+        <about-me id="#about-me">
+            <h2>About Me</h2>
+            <figure>
+                <img src="src/image.jpg" width="200" alt="This is me!" style="height: auto;">
+                <figcaption>This is me!</figcaption>
+            </figure>
+
+            <section>
+                <p>My name is <span style="color: red">Wai Taing Lam, Timothy</span>! I am a senior at UC San Diego
+                    majoring in Computer Science!</p>
+                <p>Paragraph 2</p>
+                <p>Paragraph 3</p>
+            </section>
+        </about-me>
+
+        <experience-section id="experience">
+            <h2>Experience</h2>
+            <!--Content for Study History-->
         <section>
-            <h2>Feedback Form</h2>
-            <form action="src/assets/form.html" method="POST">
-                <fieldset>
-                    <legend>User Info.</legend>
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </fieldset>
-                <br>
-                <label for="rating">Rating (1-5):</label>
-                <input list="ratings" id="rating" name="rating" placeholder="Select or Type a Rating" required>
-                <datalist id="ratings">
-                    <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
-                    <option value="4">⭐⭐⭐⭐ - Good</option>
-                    <option value="3">⭐⭐⭐ - Average</option>
-                    <option value="2">⭐⭐ - Poor</option>
-                    <option value="1">⭐ - Very Bad</option>
-                </datalist>
-                <br>
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+            <h3>Study</h3>
+            <!--preformatted text-->
+            <pre>
+<strong>University of California, San Diego</strong>, La Jolla, CA                 Expected Graduation: DEC 2025
+                    
+Bachelor of Science in Computer Science                                               GPA: 3.79 
+            </pre>
+            <pre>
+<strong>Foothill College</strong>, Palo Alto, CA                                             SEP 2021 - JUN 2023
+                    
+Associate in Science for Transfer, Computer Science                                   GPA: 3.83 
+            </pre>
         </section>
+        <br>
+        <!--Content for Work History-->
+        <section>
+            <h3>Work History</h3>
+            <section>
+                <pre>
+<strong>Infrastructure Maintenance Department, MTR</strong>, Hong Kong                       JUL 24 - AUG 24 
+                        
+Smart Maintenance Data Analyst Intern  
+                </pre>
+                <section>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Perform data entry and preliminary analysis on overhead-line Smart maintenance data, ensuring accurate and up-to-date 
+                            records.</li>
+                        <li>Develop and implement an automated database system to streamline data analysis processes, enhancing efficiency and 
+                            reducing manual errors.</li>
+                        <li>Utilize data analysis tools and software to identify patterns and generate reports supporting informed decision-making.</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <br>
+        <!--Content for Leadership Roles-->
+        <section>
+            <h3>Leadership Roles</h3>
+            <section>
+                <h4>Organization</h4>
+                <p><strong>Title</strong></p>
+                <p>Start Date - End Date</p>
+                <section>
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                    </ul>
+                </section>
+        </section>
+        <br>
+        <!--Content for Skills-->
+        <section>
+            <h3>Skills</h3>
+            <section>
+                <p><b><u>Programming</u></b>: <i>C++, Java, Python, SQL, C, MATLAB, HTML, JavaScript, Git, Linux</i></p>
+                <p><b><u>Soft Skills</u></b>: <em>Communication, Problem Solving, Teamwork, Time Management, Passion to Learn</em></p>
+            </section>
+        </section>
+        </experience-section>
+
+        <projects-section id="projects">
+            <div>
+                <hgroup>
+                    <h1>Project 1</h1>
+                    <p>2024 | <code>Python</code></p>
+                </hgroup>
+                <p>Project 1 is a project that does this and that. It is a project that is very cool and very 
+                    interesting.</p>
+            </div>
+            <hr>
+            <div>
+                <hgroup>
+                    <h1>Project 2</h1>
+                    <p>2023 | <code>HTML CSS JavaScript</code></p>
+                </hgroup>
+                <p>Project 2 is a web app for fun.</p>
+            </div>
+        </projects-section>
     </main>
     <br>
     <footer>
+        <form action="src/assets/form.html" method="POST">
+            <h2>Feedback Form</h2>
+            <fieldset>
+                <legend>User Info.</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <br>
+            <label for="rating">Rating (1-5):</label>
+            <input list="ratings" id="rating" name="rating" placeholder="Select or Type a Rating" required>
+            <datalist id="ratings">
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Good</option>
+                <option value="3">⭐⭐⭐ - Average</option>
+                <option value="2">⭐⭐ - Poor</option>
+                <option value="1">⭐ - Very Bad</option>
+            </datalist>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+
         <p>&copy; 2025 Timothy Lam</p>
     </footer>
 </body>
