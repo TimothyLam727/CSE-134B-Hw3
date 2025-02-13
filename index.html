@@ -9,6 +9,8 @@
     <script src="src/scripts/hello-world.js"></script>
 </head>
 
+<script src="https://kit.fontawesome.com/306a08d434.js" crossorigin="anonymous"></script>
+
 <body>
     <header>
         <div class="nav-container">
@@ -19,8 +21,11 @@
                 <ul>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
                 </ul>
+                <a href="https://github.com/timothy0727" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github fa-bounce slow-bounce"></i>
+                </a>
             </custom-nav>
             <social-links>
                 <!--The <aside> can be removed-->
@@ -89,38 +94,48 @@
         <experience-section id="experience">
             <h2>Experience</h2>
             <!--Content for Study History-->
-            <section id="study">
+            <section id="study-experience">
                 <h3>Study</h3>
-                <article class="study">
-                    <h4 class="top-row left">University of California, San Diego, La Jolla, CA</h4>
-                    <p class="top-row right">Expected Graduation: DEC 2025</p>
-                    <p class="bottom-row left">Bachelor of Science in Computer Science</p>
-                    <p class="bottom-row right">GPA: 3.79</p>
+                <article class="study ucsd">
+                    <article class="format">
+                        <article class="left">
+                            <h4>University of California, San Diego, La Jolla, CA</h4>
+                            <p>Bachelor of Science in Computer Science</p>
+                        </article>
+                        <article class="right">
+                            <p>Expected Graduation: DEC 2025</p>
+                            <p>GPA: 3.79</p>
+                        </article>
+                    </article>
                 </article>
 
-                <article class="study">
-                    <h4 class="top-row left">Foothill College, Palo Alto, CA</h4>
-                    <p class="top-row right">SEP 2021 - JUN 2023</p>
-                    <p class="bottom-row left">Associate in Science for Transfer, Computer Science</p>
-                    <p class="bottom-row right">GPA: 3.83</p>
+                <article class="study foothill">
+                    <article class="format">
+                        <article class="left">
+                            <h4>Foothill College, Palo Alto, CA</h4>
+                            <p>Associate in Science for Transfer, Computer Science</p>
+                        </article>
+                        <article class="right">
+                            <p>SEP 2021 - JUN 2023</p>
+                            <p>GPA: 3.83</p>
+                        </article>
+                    </article>
                 </article>
             </section>
 
             <br>
 
             <!--Content for Work History-->
-            <section>
+            <section id="work-experience">
                 <h3>Work History</h3>
                 <article id="mtr" class="work">
-                    <div class="format">
-                        <div class="work-left">
-                            <h4 >MTR, Hong Kong</h4>
-                            <p >Smart Maintenance Data Analyst Intern</p>
-                        </div>
-                        <!-- <h4 class="top-row left">MTR, Hong Kong</h4> -->
-                        <p class="work-right">JUL 24 - AUG 24</p>
-                        <!-- <p class="bottom-row left">Smart Maintenance Data Analyst Intern</p> -->
-                    </div>
+                    <article class="format">
+                        <article class="left">
+                            <h4>MTR, Hong Kong</h4>
+                            <p>Smart Maintenance Data Analyst Intern</p>
+                        </article>
+                        <p class="right">JUL 24 - AUG 24</p>
+                    </article>
                     <ul id="responsibilities">
                         <li>Perform data entry and preliminary analysis on overhead-line Smart maintenance data,
                             ensuring accurate and up-to-date
@@ -135,13 +150,13 @@
 
                 <article id="pass-the-torch" class="work">
                     <div class="format">
-                        <div class="work-left">
+                        <div class="left">
                             <h4>Pass the Torch, Foothill College, CA</h4>
                             <p>Instructional Assistant</p>
                         </div>
-                        <p class="work-right">MAY 22 - MAR 23</p>
+                        <p class="right">MAY 22 - MAR 23</p>
                     </div>
-                    
+
 
                     <ul id="responsibilities">
                         <li>Acted as a team leader and committed to weekly meetings with assigned study teams.</li>
@@ -157,27 +172,30 @@
             <br>
 
             <!--Content for Leadership Roles-->
-            <section>
+            <section id="leadership-roles">
                 <h3>Leadership Roles</h3>
-                <section>
-                    <h4>Organization</h4>
-                    <p><strong>Title</strong></p>
-                    <p>Start Date - End Date</p>
-                    <section>
-                        <p>Responsibilities:</p>
-                        <ul>
-                            <li>one</li>
-                            <li>two</li>
-                            <li>three</li>
-                        </ul>
-                    </section>
-                </section>
+                <article id="hksa" class="work">
+                    <article class="format">
+                        <article class="left">
+                            <h4>Hong Kong Student Association, Foothill College, CA</h4>
+                            <p>Founder & President</p>
+                        </article>
+                        <p class="right">SEP 22 - JUN 23</p>
+                    </article>
+
+
+                    <ul id="responsibilities">
+                        <li>Created an open platform for Hong Kong students and those who are interested in Cantonese
+                            culture.</li>
+                        <li>Aimed to celebrate and promote Cantonese culture to different communities.</li>
+                    </ul>
+                </article>
             </section>
 
             <br>
 
             <!--Content for Skills-->
-            <section>
+            <section id="skills">
                 <h3>Skills</h3>
                 <section>
                     <p><b><u>Programming</u></b>: <i>C++, Java, Python, SQL, C, MATLAB, HTML, JavaScript, Git, Linux</i>
@@ -191,24 +209,55 @@
 
         <br>
 
-        <projects-section id="projects">
+        <projects-section id="projects-section">
             <h2>Projects</h2>
-            <div>
-                <hgroup>
-                    <h1>Project 1</h1>
-                    <p>2024 | <code>Python</code></p>
-                </hgroup>
-                <p>Project 1 is a project that does this and that. It is a project that is very cool and very
-                    interesting.</p>
-            </div>
-            <hr>
-            <div>
-                <hgroup>
-                    <h1>Project 2</h1>
-                    <p>2023 | <code>HTML CSS JavaScript</code></p>
-                </hgroup>
-                <p>Project 2 is a web app for fun.</p>
-            </div>
+            <section id="projects">
+                <section id="codelog">
+                    <article>
+                        <h3><a href="https://timothy0727.github.io/Codelog/home_projects_page.html">CodeLog</a></h3>
+                        <p>2024 | <code>HTML CSS JS</code></p>
+                    </article>
+                    <ul>
+                        <li>Collaborated with a team of 10 to design and implement a portfolio web app for coders to
+                            showcase their personal projects and for recruiters to understand these projects quickly and
+                            efficiently.</li>
+                        <li>A user-friendly journal application tailored for software developers enables code
+                            documentation
+                            and tracking, enhancing coding efficiency and maintenance.</li>
+                    </ul>
+                </section>
+
+                <section id="tswift">
+                    <article>
+                        <h3><a>tswift</a></h3>
+                        <p>2023 | <code>Python</code></p>
+                    </article>
+                    <ul>
+                        <li>A search engine for Taylor Swift’s songs using Python Numpy and BabyPandas.</li>
+                        <li>Users can search the songs based on the song title or song lyrics.</li>
+                        <li>Engineered a recommendation algorithm leveraging a machine learning model that analyzed user
+                            preferences to curate personalized playlists.</li>
+                    </ul>
+                </section>
+
+                <section id="striker">
+                    <article>
+                        <h3><a>Goals & Gold: The Impact of Fame on Striker Salaries</a></h3>
+                        <p>2024 | <code>Python</code></p>
+                    </article>
+                    <ul>
+                        <li>Conducted a statistical analysis on the relationship between strikers salaries, performance,
+                            and
+                            popularity in the top five European soccer leagues.</li>
+                        <li>Built Ordinary Least Squares regression models to assess the influence of different
+                            variables on
+                            wages.</li>
+                        <li>Implemented data visualization techniques to compare wage distributions and identity key
+                            salary
+                            determinants.</li>
+                    </ul>
+                </section>
+            </section>
         </projects-section>
 
     </main>
@@ -225,7 +274,7 @@
                 <input type="email" id="email" name="email" required>
             </fieldset>
             <br>
-            <label for="rating">Rating (1-5):</label>
+            <label for="rating">Do you like my website haha?:</label>
             <input list="ratings" id="rating" name="rating" placeholder="Select or Type a Rating" required>
             <datalist id="ratings">
                 <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
@@ -235,8 +284,8 @@
                 <option value="1">⭐ - Very Bad</option>
             </datalist>
             <br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <label for="message">Leave a Message:</label>
+            <textarea id="message" name="message"></textarea>
             <br>
             <button type="submit">Submit</button>
         </form>
