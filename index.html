@@ -46,8 +46,8 @@
                 <img src="https://t4.ftcdn.net/jpg/09/17/12/23/360_F_917122367_kSpdpRJ5Hcmn0s4WMdJbSZpl7NRzwupU.jpg"
                     alt="This is me!">
                 <hgroup>
-                    <h1>Hello, I am Timothy Lam.</h1>
-                    <h2>Student @ UC San Diego</h2>
+                    <h1>Hello, I am Timothy Lam!</h1>
+                    <h2>I am a student, computer enthusiast, and a debugger of my life.</h2>
                 </hgroup>
             </div>
             <blockquote>
@@ -55,95 +55,150 @@
             </blockquote>
         </home-section>
 
-        <about-me id="#about-me">
+        <about-me id="about-me">
             <h2>About Me</h2>
-            <figure>
-                <img src="src/image.jpg" width="200" alt="This is me!" style="height: auto;">
-                <figcaption>This is me!</figcaption>
-            </figure>
+            <div class="about-me-content">
+                <figure>
+                    <img src="src/image.jpg" width="300px" alt="This is me!" style="height: auto;">
+                    <figcaption>This is me!</figcaption>
+                </figure>
 
-            <section>
-                <p>My name is <span style="color: red">Wai Taing Lam, Timothy</span>! I am a senior at UC San Diego
-                    majoring in Computer Science!</p>
-                <p>Paragraph 2</p>
-                <p>Paragraph 3</p>
-            </section>
+                <section>
+                    <p>My name is Wai Taing Lam, Timothy. I am a senior at UC San Diego majoring in Computer Science,
+                        where I spend most of my time either coding, degbugging, or wondering why my code isn't working.
+                        My interests lie in machine learning and data analysis.</p>
+                    <p>Previuosly, I worked at MTR Hong Kong, where I developed an automated database system for
+                        analyzing overhad-line Smart maintenance data. I streamlined data processing workflows, making
+                        analysis faster and more efficient while helping engineer make informed decisions. I can now
+                        claim I helped keep trains running smoothly -- probably the coolest things to put on my resume.
+                    </p>
+                    <p>Beyond coding, I'm a huge soccer fan (diehard <a
+                            href="https://www.tottenhamhotspur.com/fixtures/men/" class="spurs-link"><strong>Tottenham
+                                Hotspurs</strong></a> fan despite they suck), a gym-goer who skip leg day, and a music
+                        lover who
+                        has a really bad <a
+                            href="https://open.spotify.com/playlist/0o1ZonwOTZNpVei75t9y7l?si=bb353add0f264409"
+                            class="spotify-link"><strong>Spotify
+                                playlist</strong></a>. When I am not coding, I am probably learning something new, or
+                        sleeping -- mostly sleeping.</p>
+                </section>
+            </div>
+
         </about-me>
 
         <experience-section id="experience">
             <h2>Experience</h2>
             <!--Content for Study History-->
-        <section>
-            <h3>Study</h3>
-            <!--preformatted text-->
-            <pre>
-<strong>University of California, San Diego</strong>, La Jolla, CA                 Expected Graduation: DEC 2025
-                    
-Bachelor of Science in Computer Science                                               GPA: 3.79 
-            </pre>
-            <pre>
-<strong>Foothill College</strong>, Palo Alto, CA                                             SEP 2021 - JUN 2023
-                    
-Associate in Science for Transfer, Computer Science                                   GPA: 3.83 
-            </pre>
-        </section>
-        <br>
-        <!--Content for Work History-->
-        <section>
-            <h3>Work History</h3>
+            <section id="study">
+                <h3>Study</h3>
+                <article class="study">
+                    <h4 class="top-row left">University of California, San Diego, La Jolla, CA</h4>
+                    <p class="top-row right">Expected Graduation: DEC 2025</p>
+                    <p class="bottom-row left">Bachelor of Science in Computer Science</p>
+                    <p class="bottom-row right">GPA: 3.79</p>
+                </article>
+
+                <article class="study">
+                    <h4 class="top-row left">Foothill College, Palo Alto, CA</h4>
+                    <p class="top-row right">SEP 2021 - JUN 2023</p>
+                    <p class="bottom-row left">Associate in Science for Transfer, Computer Science</p>
+                    <p class="bottom-row right">GPA: 3.83</p>
+                </article>
+            </section>
+
+            <br>
+
+            <!--Content for Work History-->
             <section>
-                <pre>
-<strong>Infrastructure Maintenance Department, MTR</strong>, Hong Kong                       JUL 24 - AUG 24 
-                        
-Smart Maintenance Data Analyst Intern  
-                </pre>
-                <section>
-                    <p>Responsibilities:</p>
-                    <ul>
-                        <li>Perform data entry and preliminary analysis on overhead-line Smart maintenance data, ensuring accurate and up-to-date 
+                <h3>Work History</h3>
+                <article id="mtr" class="work">
+                    <div class="format">
+                        <div class="work-left">
+                            <h4 >MTR, Hong Kong</h4>
+                            <p >Smart Maintenance Data Analyst Intern</p>
+                        </div>
+                        <!-- <h4 class="top-row left">MTR, Hong Kong</h4> -->
+                        <p class="work-right">JUL 24 - AUG 24</p>
+                        <!-- <p class="bottom-row left">Smart Maintenance Data Analyst Intern</p> -->
+                    </div>
+                    <ul id="responsibilities">
+                        <li>Perform data entry and preliminary analysis on overhead-line Smart maintenance data,
+                            ensuring accurate and up-to-date
                             records.</li>
-                        <li>Develop and implement an automated database system to streamline data analysis processes, enhancing efficiency and 
+                        <li>Develop and implement an automated database system to streamline data analysis
+                            processes, enhancing efficiency and
                             reducing manual errors.</li>
-                        <li>Utilize data analysis tools and software to identify patterns and generate reports supporting informed decision-making.</li>
+                        <li>Utilize data analysis tools and software to identify patterns and generate reports
+                            supporting informed decision-making.</li>
                     </ul>
-                </section>
+                </article>
+
+                <article id="pass-the-torch" class="work">
+                    <div class="format">
+                        <div class="work-left">
+                            <h4>Pass the Torch, Foothill College, CA</h4>
+                            <p>Instructional Assistant</p>
+                        </div>
+                        <p class="work-right">MAY 22 - MAR 23</p>
+                    </div>
+                    
+
+                    <ul id="responsibilities">
+                        <li>Acted as a team leader and committed to weekly meetings with assigned study teams.</li>
+                        <li>Planned and executed weekly study sessions, utilizing interactive learning techniques to
+                            engage team members and enhance understanding of complex Calculus concepts.</li>
+                        <li>Implemented innovative teaching strategies and individualized study plans to facilitate
+                            peer-to-peer knowledge sharing, resulting in a 15% increase in average test scores and final
+                            grades.</li>
+                    </ul>
+                </article>
             </section>
-        </section>
-        <br>
-        <!--Content for Leadership Roles-->
-        <section>
-            <h3>Leadership Roles</h3>
+
+            <br>
+
+            <!--Content for Leadership Roles-->
             <section>
-                <h4>Organization</h4>
-                <p><strong>Title</strong></p>
-                <p>Start Date - End Date</p>
+                <h3>Leadership Roles</h3>
                 <section>
-                    <p>Responsibilities:</p>
-                    <ul>
-                        <li>one</li>
-                        <li>two</li>
-                        <li>three</li>
-                    </ul>
+                    <h4>Organization</h4>
+                    <p><strong>Title</strong></p>
+                    <p>Start Date - End Date</p>
+                    <section>
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                        </ul>
+                    </section>
                 </section>
-        </section>
-        <br>
-        <!--Content for Skills-->
-        <section>
-            <h3>Skills</h3>
-            <section>
-                <p><b><u>Programming</u></b>: <i>C++, Java, Python, SQL, C, MATLAB, HTML, JavaScript, Git, Linux</i></p>
-                <p><b><u>Soft Skills</u></b>: <em>Communication, Problem Solving, Teamwork, Time Management, Passion to Learn</em></p>
             </section>
-        </section>
+
+            <br>
+
+            <!--Content for Skills-->
+            <section>
+                <h3>Skills</h3>
+                <section>
+                    <p><b><u>Programming</u></b>: <i>C++, Java, Python, SQL, C, MATLAB, HTML, JavaScript, Git, Linux</i>
+                    </p>
+                    <p><b><u>Soft Skills</u></b>: <em>Communication, Problem Solving, Teamwork, Time Management,
+                            Passion to Learn</em></p>
+                </section>
+            </section>
+
         </experience-section>
 
+        <br>
+
         <projects-section id="projects">
+            <h2>Projects</h2>
             <div>
                 <hgroup>
                     <h1>Project 1</h1>
                     <p>2024 | <code>Python</code></p>
                 </hgroup>
-                <p>Project 1 is a project that does this and that. It is a project that is very cool and very 
+                <p>Project 1 is a project that does this and that. It is a project that is very cool and very
                     interesting.</p>
             </div>
             <hr>
@@ -155,6 +210,7 @@ Smart Maintenance Data Analyst Intern
                 <p>Project 2 is a web app for fun.</p>
             </div>
         </projects-section>
+
     </main>
     <br>
     <footer>

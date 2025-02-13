@@ -9,8 +9,243 @@ body {
     background-color: rgb(189, 189, 182);
 }
 
-.home-content {
+main {
+    border: solid red;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 auto; */
+    width: 80%;
+    max-width: 1000px;
+    /* padding: 20px; */
+    border: solid black;
+    margin-bottom: 250px;
+}
+
+.home-main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: solid blue;
+    width: 100%;
+}
+
+blockquote {
+    width: fit-content;
+    align-self: flex-start;
+    border: solid red;
+    margin-left: 0;
+}
+
+about-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border: solid blue;
+    margin: 250px 0;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    border: solid green;
+    width: 100%;
+    height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .about-me-content {
+        flex-direction: column;
+        align-items: center; 
+    }
+}
+
+.spurs-link {
+    text-decoration: none;
+    color: white;
+}
+
+.spurs-link:hover {
+    color: lightblue;
+    cursor: pointer;
+}
+
+.spotify-link {
+    text-decoration: none;
+    color: darkolivegreen
+}
+
+.spotify-link:hover {
+    color: lightgreen;
+    cursor: pointer;
+}
+
+experience-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: solid blue;
+    margin: 250px 0;
+    width: 80%;
+    max-width: 1000px;
+}
+
+experience-section section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid red;
+    width: 100%;
+}
+
+.study {
+    border: solid red;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+
+@media (min-width: 1242px) {
+
+    .top-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* Flex container for bottom row (Degree & GPA) */
+    .bottom-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* Ensure left-aligned text */
+    .left {
+        width: fit-content;
+        text-align: center;
+        justify-content: flex-start;
+        margin-right: 10%;
+    }
+    
+    /* Ensure right-aligned text */
+    .right {
+        width: fit-content;
+        text-align: center;
+        justify-content: flex-end;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 1241px) {    
+    .study {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .left, .right {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+        color: red;
+    }
+}
+
+.work {
+    border: solid blue;
+    width: 80%;
+}
+/* 
+@media (max-width: 1241px) { 
+    .format {
+        border: solid red;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-left {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-right {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: purple;
+    }
+} */
+
+
+
+
+.format {
+    border: solid red;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+
+
+
+/* .study {
+    margin-bottom: 10px;
+} */
+
+experience-section section pre {
+    border: solid green;
+    margin: 0;
+    font-size: large;
+}
+
+#responsibilities {
+    align-self: flex-start;
+    width: 500px;
+    font-size: smaller;
+}
+
+projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: solid blue;
+    margin: 250px 0;
+    width: 80%;
+    max-width: 1000px;
 }
