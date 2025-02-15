@@ -13,48 +13,59 @@
 
 <body>
     <header>
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">T</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects-section">Projects</a>
+                <section id="contact">
+                    <p>Connect with me!</p>
+                    <div class="social-links">
+                        <a href="https://github.com/timothy0727" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github fa-bounce slow-bounce"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/wai-taing-lam-417a43227/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin fa-bounce slow-bounce"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tim_tim_0727" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram fa-bounce slow-bounce"></i>
+                        </a>
+                        <a href="mailto:timlam727@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-envelope fa-bounce slow-bounce"></i>
+                        </a>
+                    </div>
+                </section>
             </div>
-            <custom-nav>
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects-section">Projects</a></li>
-                </ul>
-                <a href="https://github.com/timothy0727" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github fa-bounce slow-bounce"></i>
-                </a>
-            </custom-nav>
-            <social-links>
-                <!--The <aside> can be removed-->
-                <aside>
-                    <p>Connect with me:</p>
-                    <address>
-                        <ul>
-                            <li><a href="https://github.com/TimothyLam727" target="_blank">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/wai-taing-lam-417a43227/"
-                                    target="_blank">LinkedIn</a></li>
-                            <li><a href="https://www.instagram.com/tim_tim_0727" target="_blank">Instagram</a></li>
-                            <li><a href="mailto:timlam727@gmail.com">Email</a></li>
-                        </ul>
-                    </address>
-
-                </aside>
-            </social-links>
         </div>
     </header>
     <main>
         <home-section id="home">
-            <div class="home-main-content">
-                <img src="https://t4.ftcdn.net/jpg/09/17/12/23/360_F_917122367_kSpdpRJ5Hcmn0s4WMdJbSZpl7NRzwupU.jpg"
-                    alt="This is me!">
+            <section id="home-main-content">
+                <picture>
+                    <source srcset="src/img/image_2-min.avif" type="image/avif">
+                    <source srcset="src/img/image_2-min.webp" type="image/webp">
+                    <img src="src/img/image_2-min.jpeg" 
+                         srcset="src/img/image_2-min-800w.jpeg 800w, 
+                                 src/img/image_2-min-1200w.jpeg 1200w, 
+                                 src/img/image_2-min-1600w.jpeg 1600w"
+                         sizes="(max-width: 600px) 800px, 
+                                (max-width: 1200px) 1200px, 
+                                1600px"
+                         alt="Timothy Lam, a Computer Science student at UC San Diego, smiling at a scenic outdoor location." 
+                         loading="lazy" 
+                         style="height: 400px; width: auto; object-fit: cover; object-position: center;">
+                </picture>
+                
                 <hgroup>
                     <h1>Hello, I am Timothy Lam!</h1>
                     <h2>I am a student, computer enthusiast, and a debugger of my life.</h2>
                 </hgroup>
-            </div>
+            </section>
             <blockquote>
                 "Be the Best of yourself, today and the days after when facing any problem."
             </blockquote>
@@ -64,7 +75,20 @@
             <h2>About Me</h2>
             <div class="about-me-content">
                 <figure>
-                    <img src="src/image.jpg" width="300px" alt="This is me!" style="height: auto;">
+                    <picture>
+                        <source srcset="src/img/image_1-min.avif" type="image/avif">
+                        <source srcset="src/img/image_1-min.webp" type="image/webp">
+                        <img src="src/img/image_1-min.jpeg" 
+                             srcset="src/img/image_1-min-300w.jpeg 300w, 
+                                     src/img/image_1-min-600w.jpeg 600w, 
+                                     src/img/image_1-min-1200w.jpeg 1200w"
+                             sizes="(max-width: 600px) 300px, 
+                                    (max-width: 1200px) 600px, 
+                                    1200px"
+                             alt="A smiling Timothy Lam, a Computer Science student at UC San Diego, standing in front of a scenic background." 
+                             loading="lazy" 
+                             style="height: auto; width: 300px; object-fit: cover; object-position: center;">
+                    </picture>
                     <figcaption>This is me!</figcaption>
                 </figure>
 
@@ -88,7 +112,6 @@
                         sleeping -- mostly sleeping.</p>
                 </section>
             </div>
-
         </about-me>
 
         <experience-section id="experience">
@@ -192,7 +215,6 @@
                 </article>
             </section>
 
-            <br>
 
             <!--Content for Skills-->
             <section id="skills">
@@ -207,14 +229,13 @@
 
         </experience-section>
 
-        <br>
 
         <projects-section id="projects-section">
             <h2>Projects</h2>
             <section id="projects">
                 <section id="codelog">
                     <article>
-                        <h3><a href="https://timothy0727.github.io/Codelog/home_projects_page.html">CodeLog</a></h3>
+                        <a href="https://timothy0727.github.io/Codelog/home_projects_page.html">CodeLog</a>
                         <p>2024 | <code>HTML CSS JS</code></p>
                     </article>
                     <ul>
@@ -229,7 +250,7 @@
 
                 <section id="tswift">
                     <article>
-                        <h3><a>tswift</a></h3>
+                        <a>tswift</a>
                         <p>2023 | <code>Python</code></p>
                     </article>
                     <ul>
@@ -242,7 +263,7 @@
 
                 <section id="striker">
                     <article>
-                        <h3><a>Goals & Gold: The Impact of Fame on Striker Salaries</a></h3>
+                        <a>Goals & Gold: The Impact of Fame on Striker Salaries</a>
                         <p>2024 | <code>Python</code></p>
                     </article>
                     <ul>
@@ -264,11 +285,12 @@
     <br>
     <footer>
         <form action="src/assets/form.html" method="POST">
-            <h2>Feedback Form</h2>
+            <h3>Leave me a message~</h3>
             <fieldset>
-                <legend>User Info.</legend>
+                <legend>Your Info.</legend>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+                <br>
                 <br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
@@ -284,8 +306,8 @@
                 <option value="1">⭐ - Very Bad</option>
             </datalist>
             <br>
-            <label for="message">Leave a Message:</label>
-            <textarea id="message" name="message"></textarea>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" maxlength="300"></textarea>
             <br>
             <button type="submit">Submit</button>
         </form>
